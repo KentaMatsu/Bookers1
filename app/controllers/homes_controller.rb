@@ -3,5 +3,4 @@ class HomesController < ApplicationController
     
   end
   
-  
 end

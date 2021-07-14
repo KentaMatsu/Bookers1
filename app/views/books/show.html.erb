@@ -1,10 +1,19 @@
-<p>詳細ページ</p>
-
-<p>Title:</p>
+<%= flash[:notice] %>
 
 
-<p>Body:</p>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
 
-<p><%= link_to 'Edit', books_path(@Book.id) %></p>
-"|"
-<p><%= link_to 'Back', edit_book_path %></p>
+<p>
+  <strong>Body:</strong>
+  <%= @book.body %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_book_path %>
+  |
+  <%= link_to 'Back', books_path %>
+</p>
+
